@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/chinsun9/draw-lots/static/css/main.471b46ec.css",
+    "main.js": "/chinsun9/draw-lots/static/js/main.68ad5a9e.js",
+    "static/js/787.d2edeac7.chunk.js": "/chinsun9/draw-lots/static/js/787.d2edeac7.chunk.js",
+    "static/media/jsonFile.svg": "/chinsun9/draw-lots/static/media/jsonFile.29fdf1688ce0dece2916fa511854bc0e.svg",
+    "index.html": "/chinsun9/draw-lots/index.html",
+    "main.471b46ec.css.map": "/chinsun9/draw-lots/static/css/main.471b46ec.css.map",
+    "main.68ad5a9e.js.map": "/chinsun9/draw-lots/static/js/main.68ad5a9e.js.map",
+    "787.d2edeac7.chunk.js.map": "/chinsun9/draw-lots/static/js/787.d2edeac7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.471b46ec.css",
+    "static/js/main.68ad5a9e.js"
+  ]
+}
