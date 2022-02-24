@@ -21,6 +21,10 @@
   "ignorePatterns": ["config-overrides.js"],
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "import/prefer-default-export": "off",
+    "no-use-before-define": "off",
+    "no-alert": "off",
+    "no-console": "off",
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".ts", ".tsx"] }

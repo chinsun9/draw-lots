@@ -5563,6 +5563,11 @@ jest@^27.4.3:
     import-local "^3.0.2"
     jest-cli "^27.5.0"
 
+js-confetti@^0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/js-confetti/-/js-confetti-0.10.2.tgz#f30aab309735284d5694845f24a6a3a3d4221984"
+  integrity sha512-/ppeGV3sOJ/DDH43ABbqe8V/9Fx5TUNkywPlXr9YK9OK6++olMtRP/yRdXftl49iTIAAdoNopkgAy3SLOgSE+A==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -5997,6 +6002,16 @@ mkdirp@^0.5.5, mkdirp@~0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+mobx-react-lite@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-3.3.0.tgz#7174e807201943beff6f9d3701492314c9fc0db3"
+  integrity sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==
+
+mobx@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-6.4.1.tgz#c1d0eeb37ceb31bb2020a85f6bf856782d47fe60"
+  integrity sha512-NFXx0uMbGBgsa0uxhH099L8cMuoRQWh01q6Sf0ZX/3hFU7svJ7yfTD+1LnLMa5wzY/b7gImAeMsR1p0wordDnA==
 
 ms@2.0.0:
   version "2.0.0"

@@ -1,27 +1,22 @@
 {
-  "name": "cra5",
+  "name": "draw-lots",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@emotion/css": "^11.7.1",
-    "@emotion/react": "^11.7.1",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+  "description": "",
+  "keywords": [],
+  "homepage": "draw-lots",
+  "bugs": {
+    "url": "https://github.com/chinsun9/draw-lots/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinsun9/draw-lots.git"
+  },
+  "license": "MIT",
+  "author": "chinsun9 <chin_sung@naver.com>",
   "scripts": {
-    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "start": "react-app-rewired start",
     "test": "react-app-rewired test"
   },
   "browserslist": {
@@ -35,6 +30,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "js-confetti": "^0.10.2",
+    "mobx": "^6.4.1",
+    "mobx-react-lite": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
   },
   "devDependencies": {
     "customize-cra": "^1.0.0",
