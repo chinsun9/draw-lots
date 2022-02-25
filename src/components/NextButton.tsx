@@ -28,10 +28,12 @@ const emojis = [
   '💚',
 ];
 
+const confetti = new JSConfetti();
+
 function NextButton() {
   const { pick, initNext } = useStore();
   const onClickHandler = () => {
-    new JSConfetti().addConfetti({
+    confetti.addConfetti({
       emojiSize: 40,
       emojis,
       confettiNumber: 100,
@@ -55,7 +57,7 @@ function NextButton() {
 
 export default observer(NextButton);
 
-export function style1() {
+function style1() {
   return css`
     display: grid;
     place-items: center;

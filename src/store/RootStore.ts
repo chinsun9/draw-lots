@@ -1,5 +1,6 @@
+import arrayShuffle from 'array-shuffle';
 import { makeAutoObservable } from 'mobx';
-import { getRandomInt, shuffle } from '../utils';
+import { getRandomInt } from '../utils';
 import GlobalStore from './GlobalStore';
 
 const DATA_KEY = 'data2';
@@ -45,7 +46,7 @@ class RootStore {
   };
 
   shuffle = () => {
-    this.cards = shuffle(this.cards);
+    this.cards = arrayShuffle(this.cards);
   };
 
   pick = () => {
