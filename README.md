@@ -1,15 +1,16 @@
-# typescript react eslint prettier template
+# draw lots
 
-```sh terminal
-# ts react cra ; https://create-react-app.dev/docs/getting-started#creating-a-typescript-app
-yarn create react-app . --template typescript
+> 제비 뽑기
 
-# eslint + prettier
-yarn eslint --init
-yarn add -D eslint-config-airbnb@latest
-yarn add -D prettier eslint-config-prettier
+## 기능
 
-# css prop
-yarn add @emotion/css @emotion/react @emotion/babel-preset-css-prop
-yarn add -D react-app-rewired customize-cra
+![dragdrop](/readmeRes/dragdrop.gif)
+
+```jsonc src/data/example.json
+["chinsun9", "안녕", "하세", "요를레이"]
 ```
+
+- string[] 형식의 json 파일을 드래그 드랍해서 초기화
+- 이후 localStorage에 저장되어 유지
+- 새로고침하면 순서 셔플
+- next 버튼으로 뽑기
