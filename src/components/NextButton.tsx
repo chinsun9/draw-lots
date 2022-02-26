@@ -1,8 +1,8 @@
-import { css } from '@emotion/react';
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { useStore } from '../hooks/useStore';
 import { confetti } from '../utils';
+import { styleCenter } from '../styles';
 
 function NextButton() {
   const { pick, initNext } = useStore();
@@ -14,7 +14,7 @@ function NextButton() {
   };
 
   return (
-    <div css={style1()}>
+    <div css={styleCenter}>
       <button type="button" onClick={onClickHandler}>
         next
       </button>
@@ -23,10 +23,3 @@ function NextButton() {
 }
 
 export default observer(NextButton);
-
-function style1() {
-  return css`
-    display: grid;
-    place-items: center;
-  `;
-}
