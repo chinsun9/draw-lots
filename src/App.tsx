@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <div
-        css={styleMain(isDragging)}
+        css={styleMain}
         onDragEnter={onDragEnterHandler}
         onDragLeave={onDragLeaveHandler}
         onDragOver={onDragOverHandler}
@@ -80,19 +80,13 @@ function App() {
 
 export default observer(App);
 
-const styleMain = (isDragging: boolean) => css`
+const styleMain = css`
   background: #1e1e1e;
   font-size: 3rem;
   padding: 3rem;
   min-height: 100vh;
-  height: 100%;
   color: #d4d4d4;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  ${isDragging &&
-  css`
-    filter: blur(14px);
-  `}
 `;

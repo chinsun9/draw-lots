@@ -1,14 +1,17 @@
-// https://github.com/sindresorhus/array-shuffle/blob/main/index.js
-export const shuffle = <T>(arr: T[]) => {
-  const array = [...arr];
+import JSConfetti from 'js-confetti';
 
-  for (let index = array.length - 1; index > 0; index -= 1) {
-    const newIndex = Math.floor(Math.random() * (index + 1));
-    [array[index], array[newIndex]] = [array[newIndex], array[index]];
-  }
-
-  return array;
-};
+const jsConfetti = new JSConfetti();
 
 export const getRandomInt = (max: number) =>
   Math.floor(Math.random() * Math.floor(max));
+
+export const confetti = () => {
+  // prettier-ignore
+  const emojis = ['✌', '😂', '😝', '😁', '😱', '👀', '🚗', '🍎', '💝', '💙', '👌', '❤', '😍', '😉', '😓', '😳', '👄', '🚲', '🍉', '💛', '💚'];
+
+  jsConfetti.addConfetti({
+    emojiSize: 40,
+    emojis,
+    confettiNumber: 100,
+  });
+};

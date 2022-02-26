@@ -1,43 +1,34 @@
 import { css } from '@emotion/react';
 import React from 'react';
 import { ReactComponent as JsonFIleIcon } from '../icons/jsonFile.svg';
+import { styleCenter } from '../styles';
 
 function DropZoneGuide() {
   return (
-    <div css={style()}>
-      <div>
-        <JsonFIleIcon />
-      </div>
+    <div css={styleDropZoneGuide}>
+      <JsonFIleIcon />
     </div>
   );
 }
 
 export default DropZoneGuide;
-function style() {
-  return css`
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    padding: 3rem;
-    pointer-events: none;
-    font-size: 3rem;
 
-    > div {
-      border: 3px dashed black;
-      border-radius: 3rem;
-      height: 100%;
+const styleDropZoneGuide = css`
+  ${styleCenter}
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 3rem;
+  border: 3px dashed white;
+  border-radius: 3rem;
+  backdrop-filter: blur(14px);
+  pointer-events: none;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      > svg {
-        width: 6rem;
-        height: 6rem;
-      }
-    }
-  `;
-}
+  svg {
+    width: 6rem;
+    height: 6rem;
+    color: white;
+  }
+`;
