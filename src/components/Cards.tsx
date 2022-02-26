@@ -8,9 +8,9 @@ function Cards() {
   const { cards } = useStore();
 
   return (
-    <div css={styleList()}>
+    <div css={styleList}>
       {cards.map((v) => (
-        <div key={v} css={styleListItem()}>
+        <div key={v} css={styleListItem}>
           {v}
         </div>
       ))}
@@ -20,22 +20,18 @@ function Cards() {
 
 export default observer(Cards);
 
-function styleListItem() {
-  return css`
-    font-size: 16px;
-    background-color: rgba(200, 200, 200, 0.15);
-    padding: 0.5em;
-    width: 100%;
-    ${styleCenter}
-  `;
-}
+const styleListItem = css`
+  ${styleCenter}
+  font-size: 16px;
+  background-color: rgba(200, 200, 200, 0.15);
+  padding: 0.5em;
+  width: 100%;
+`;
 
-function styleList() {
-  return css`
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 0 20vw;
-    margin-bottom: 5vh;
-  `;
-}
+const styleList = css`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 0 20vw;
+  margin-bottom: 5vh;
+`;

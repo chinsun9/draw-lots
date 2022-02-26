@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <div
-        css={styleMain()}
+        css={styleMain}
         onDragEnter={onDragEnterHandler}
         onDragLeave={onDragLeaveHandler}
         onDragOver={onDragOverHandler}
@@ -80,15 +80,13 @@ function App() {
 
 export default observer(App);
 
-function styleMain() {
-  return css`
-    background: #1e1e1e;
-    font-size: 3rem;
-    padding: 3rem;
-    min-height: 100vh;
-    color: #d4d4d4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  `;
-}
+const styleMain = css`
+  background: #1e1e1e;
+  font-size: 3rem;
+  padding: 3rem;
+  min-height: 100vh;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;

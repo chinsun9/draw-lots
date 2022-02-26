@@ -5,7 +5,7 @@ import { styleCenter } from '../styles';
 
 function DropZoneGuide() {
   return (
-    <div css={style()}>
+    <div css={styleDropZoneGuide}>
       <JsonFIleIcon />
     </div>
   );
@@ -13,24 +13,22 @@ function DropZoneGuide() {
 
 export default DropZoneGuide;
 
-function style() {
-  return css`
-    ${styleCenter}
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 3rem;
-    border: 3px dashed white;
-    border-radius: 3rem;
-    backdrop-filter: blur(14px);
-    pointer-events: none;
+const styleDropZoneGuide = css`
+  ${styleCenter}
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 3rem;
+  border: 3px dashed white;
+  border-radius: 3rem;
+  backdrop-filter: blur(14px);
+  pointer-events: none;
 
-    svg {
-      width: 6rem;
-      height: 6rem;
-      color: white;
-    }
-  `;
-}
+  svg {
+    width: 6rem;
+    height: 6rem;
+    color: white;
+  }
+`;
