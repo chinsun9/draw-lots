@@ -1,54 +1,21 @@
 import { css } from '@emotion/react';
-import JSConfetti from 'js-confetti';
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { useStore } from '../hooks/useStore';
-
-const emojis = [
-  '✌',
-  '😂',
-  '😝',
-  '😁',
-  '😱',
-  '👀',
-  '🚗',
-  '🍎',
-  '💝',
-  '💙',
-  '👌',
-  '❤',
-  '😍',
-  '😉',
-  '😓',
-  '😳',
-  '👄',
-  '🚲',
-  '🍉',
-  '💛',
-  '💚',
-];
-
-const confetti = new JSConfetti();
+import { confetti } from '../utils';
 
 function NextButton() {
   const { pick, initNext } = useStore();
+
   const onClickHandler = () => {
-    confetti.addConfetti({
-      emojiSize: 40,
-      emojis,
-      confettiNumber: 100,
-    });
-
+    confetti();
     initNext();
-
-    setTimeout(() => {
-      pick();
-    }, 200);
+    setTimeout(pick, 200);
   };
 
   return (
     <div css={style1()}>
-      <button type="button" onClick={onClickHandler} css={css``}>
+      <button type="button" onClick={onClickHandler}>
         next
       </button>
     </div>
